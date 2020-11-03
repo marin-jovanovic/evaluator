@@ -59,8 +59,7 @@ def test():
     except:
       print(open(TESTS_PATH + str("00") + "/test.in", 'r').read())
 
-    print("lijevo je tocno")
-    print("lijevo je tocno")
+    print("left is correct")
     counter = 0
     for correct_output_line in correct_output_lines:
 
@@ -87,20 +86,27 @@ def test():
     return False
 
 
-def test_programs_path():
+def test_program_path():
   from os import path
   if not path.exists(PROGRAM_PATH):
-    print("Error occured during opening program\nCheck program's path constant")
+    print("Error occured during opening program\nCheck \"PROGRAM_PATH\" constant")
     import sys
     sys.exit()
 
 
-if __name__ == '__main__':
+def test_tests_path():
   from os import path
   if not path.exists(TESTS_PATH + str(TEST_COUNT) + "/test.out"):
-    print("Error occured during opening test\nCheck tests path constant")
+    print("Error occured during opening test\nCheck \"TESTS_PATH\" constant")
 
-  test_programs_path()
+
+def get_number_of_tests():
+
+
+if __name__ == '__main__':
+
+  test_tests_path()
+  test_program_path()
 
   # kolko testova ima
   for file in os.listdir(TESTS_PATH):
