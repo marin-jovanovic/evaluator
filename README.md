@@ -5,23 +5,10 @@ evaluator tests program with sample of test cases.
 
 
 ## test cases
-must be files sorted in following tree format:
+insert test input and test output files in separate folders
 
-PATH
+folder names are not important
 
--0
-
---input.txt
-
---output.txt
-
--1
-
---input.txt
-
---output.txt
-
-...
 
 ## program
 evaluator can only test program's console output.
