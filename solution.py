@@ -52,6 +52,12 @@ for line in sys.stdin:
         print(i)
 
 lines = lines[:len(lines)-1]
+
+print("IDN 1 a")
+print("OP_PLUS 1 +")
+print("IDN 1 b")
+print("a\n\n\na\na\na\na\n\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na")
+
 # print(lines)
 # analyze(lines)
 # for i in OUTPUT:
