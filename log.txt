@@ -1,2 +1,2 @@
-C:/git/evaluator/solution.py
-C:/git/evaluator/tests
+C:/git/artificial-intelligence/lab1/solution.py
+C:/git/artificial-intelligence/lab1/tests
