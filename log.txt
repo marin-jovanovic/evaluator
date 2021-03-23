@@ -1,0 +1,13 @@
+C:/git/minesweeper/src/main/Main.java
+C:/git/advent-of-code-2020
+
+
+
+C:/git/advent-of-code-2020/05/part_one.py
+C:/MinGW
+C:/git/artificial-intelligence/lab1/solution.py
+C:/PerfLogs
+
+C:/git/advent-of-code-2020/02/part_two.py
+C:/git/advent-of-code-2020/02/part_two.py
+

@@ -8,8 +8,8 @@ def append_to_log(data):
     log.close()
 
 
-def app_chooser(message):
-    print(message)
+def file_chooser():
+    # print(message)
     root = tkinter.Tk()
     root.withdraw()
 
@@ -18,41 +18,56 @@ def app_chooser(message):
     return file_path
 
 
-def dir_chooser(message):
+def dir_chooser():
     root = tkinter.Tk()
     root.withdraw()
-    dirname = filedialog.askdirectory(parent=root, initialdir="/", title='Please select a directory')
+    dirname = filedialog.askdirectory(parent=root, initialdir="/", title=
+    'Please select a directory')
     return dirname
 
 
-append_to_log(app_chooser("select path to program"))
-append_to_log(dir_chooser("select path to tests"))
-
-# import tkinter as tk
-
-root = tkinter.Tk()
-
-canvas1 = tkinter.Canvas(root, width=400, height=300)
-canvas1.pack()
-
-entry1 = tkinter.Entry(root)
-canvas1.create_window(200, 140, window=entry1)
-
-
 def getSquareRoot():
-    x1 = entry1.get()
-
-    label1 = tkinter.Label(root, text=float(x1) ** 0.5)
-    canvas1.create_window(200, 230, window=label1)
+    print("function call")
 
 
-button1 = tkinter.Button(text='Get the Square Root', command=getSquareRoot)
-canvas1.create_window(200, 180, window=button1)
-
-root.mainloop()
-
-# import Tkinter, tkFileDialog
+    # x1 = entry1.get()
+    #
+    # label1 = tkinter.Label(root, text=float(x1) ** 0.5)
+    # canvas1.create_window(200, 230, window=label1)
 
 
+def file_driver():
+    append_to_log(file_chooser())
 
-print("setup done, now start main")
+def dir_driver():
+    append_to_log(dir_chooser())
+
+
+
+if __name__ == '__main__':
+
+    print("welcome to setup script")
+
+    # print("select path to program")
+    # append_to_log(file_chooser())
+    #
+    # print("select path to tests")
+    # append_to_log(dir_chooser())
+
+
+
+    root = tkinter.Tk()
+
+    canvas1 = tkinter.Canvas(root, width=200, height=300)
+    canvas1.pack()
+
+    button1 = tkinter.Button(text='select path to program', command=file_driver)
+    canvas1.create_window(100, 100, window=button1)
+
+    button2 = tkinter.Button(text='select dir to tests', command=dir_driver)
+    canvas1.create_window(100, 200, window=button2)
+
+    root.mainloop()
+
+    print()
+    print("setup done, now start main")
