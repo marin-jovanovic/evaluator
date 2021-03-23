@@ -1,20 +1,16 @@
 ##########
 # Constants
 ##########
-import constants
 import os
+
+import constants
+import multiprocessing
 
 
 ##########
 # Subroutines
 ##########
 
-
-def get_number_of_tests():
-    import os
-
-    list = os.listdir(constants.TESTS_PATH)  # dir is your directory path
-    return len(list)
 
 def print_blue(data):
     print("\33[34m" + data + "\033[0m")
@@ -23,33 +19,14 @@ def print_blue(data):
 def print_red(data):
     print("\33[31m" + data + "\033[0m")
 
-def timeout_handler(signal, frame):
-    raise Exception('Time is up!')
-
-import signal
-
-program_output_lines = []
-# program_path = ""
-# args = ""
-
-
 
 def get_programs_output(queue, program_path, args):
-    # global program_path
-    # global args
-    global program_output_lines
-    print("----")
-    print(program_path)
-    print(args)
     program_output_lines = os.popen("py " + program_path + " " + args).read().split("\n")
-    print(program_output_lines)
     queue.put(program_output_lines)
-    # return program_output_lines
+
 
 if __name__ == '__main__':
-    # global program_path
-    # global program_output_lines
-    import multiprocessing
+
     time_limit = 10
 
     # read paths
@@ -69,8 +46,6 @@ if __name__ == '__main__':
         print(test)
     print()
 
-    num_of_tests = get_number_of_tests()
-
     import datetime
 
     biggest_execution_time_seconds = 0
@@ -86,6 +61,9 @@ if __name__ == '__main__':
         print(raw_data)
         args = raw_data[0]
 
+        print("args:", args)
+        print("expected output:", raw_data[2:])
+
         start_time = datetime.datetime.now()
         queue = multiprocessing.Queue()
         p = multiprocessing.Process(target=get_programs_output, args=(queue, program_path, args,))
@@ -93,9 +71,6 @@ if __name__ == '__main__':
 
         p.join(time_limit)
 
-        #     print("working")
-        # while True:
-        #
         if p.is_alive():
             p.terminate()
             print('function terminated')
@@ -103,9 +78,6 @@ if __name__ == '__main__':
             p.join()
 
         program_output_lines = queue.get()
-
-
-        # program_output_lines = os.popen("py " + program_path + " " + args).read().split("\n")
 
         end_time = datetime.datetime.now()
         execution_time = end_time - start_time
