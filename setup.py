@@ -20,8 +20,8 @@ def file_chooser():
 def dir_chooser():
     root = tkinter.Tk()
     root.withdraw()
-    dirname = filedialog.askdirectory(parent=root, initialdir="/", title=
-    'Please select a directory')
+    dirname = filedialog.askdirectory(parent=root,
+                                      initialdir="/", title='Please select a directory')
     return dirname
 
 
@@ -35,7 +35,7 @@ def check_driver():
 
     if path.exists(PROGRAM_PATH) and path.exists(DIR_PATH):
         check.delete(0, tkinter.END)
-        check.insert(0, "both paths exist, all ok, ready to exit by pressing X")
+        check.insert(0, "both paths exist, all ok, ready to exit, saving on exit")
 
     elif path.exists(PROGRAM_PATH):
         check.delete(0, tkinter.END)
@@ -73,7 +73,7 @@ def dir_driver():
 def on_closing():
     global root
     import tkinter.messagebox
-    if tkinter.messagebox.askokcancel("Quit", "Do you want to quit?"):
+    if tkinter.messagebox.askokcancel("Quit", "Save and exit?"):
         print("saving")
 
         append_to_log(PROGRAM_PATH + "\n" + DIR_PATH)
