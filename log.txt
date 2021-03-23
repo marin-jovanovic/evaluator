@@ -1,2 +1,2 @@
-
-
+C:/git/evaluator/solution.py
+C:/git/evaluator/tests

@@ -2,10 +2,10 @@
 # Constants
 ##########
 
-TESTS_PATH = "C:/git/nfa/lab1_primjeri/"
+t = [line[:-1] for line in open("log.txt").readlines()]
 
-PROGRAM_PATH = "C:\\git\\lexer\\main (3).py"
-
+PROGRAM_PATH = t[0]
+TESTS_PATH = t[1]
 
 TEST_COUNT = 1
 PASSED_TESTS = 0
