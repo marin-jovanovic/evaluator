@@ -1,0 +1,8 @@
+--alg ucs --ss ai.txt 
+
+# UCS
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 7
+[PATH_LENGTH]: 4
+[TOTAL_COST]: 17.0
+[PATH]: enroll_artificial_intelligence => complete_lab => pass_continuous => pass_course

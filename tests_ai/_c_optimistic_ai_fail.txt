@@ -1,0 +1,13 @@
+--ss ai.txt --h ai_fail.txt --check-optimistic
+
+# HEURISTIC-OPTIMISTIC ai_fail.txt
+[CONDITION]: [OK] h(complete_lab) < h*: 10.0 < 13.0
+[CONDITION]: [OK] h(enroll_artificial_intelligence) < h*: 17.0 < 17.0
+[CONDITION]: [OK] h(fail_continuous) < h*: 6.0 < 17.0
+[CONDITION]: [OK] h(fail_course) < h*: 0.0 < 0.0
+[CONDITION]: [OK] h(fail_exam) < h*: 5.0 < 20.0
+[CONDITION]: [OK] h(fail_lab) < h*: 1.0 < 17.0
+[CONDITION]: [ERR] h(pass_continuous) < h*: 20.0 < 1.0
+[CONDITION]: [OK] h(pass_course) < h*: 0.0 < 0.0
+[CONDITION]: [OK] h(pass_exam) < h*: 1.0 < 1.0
+[CONCLUSION]: Heuristic is not optimistic.

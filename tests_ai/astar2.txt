@@ -1,0 +1,8 @@
+--alg astar --ss istra.txt --h istra_heuristic.txt
+
+# A-STAR istra_heuristic.txt
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 14
+[PATH_LENGTH]: 5
+[TOTAL_COST]: 100.0
+[PATH]: Pula => Barban => Labin => Lupoglav => Buzet

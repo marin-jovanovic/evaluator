@@ -1,0 +1,48 @@
+--ss istra.txt --h istra_pessimistic_heuristic.txt --check-consistent
+
+# HEURISTIC-CONSISTENT istra_pessimistic_heuristic.txt
+[CONDITION]: [OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0
+[CONDITION]: [OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 40.0 + 19.0
+[CONDITION]: [OK] h(Baderna) <= h(Poreč) + c: 25.0 <= 32.0 + 14.0
+[CONDITION]: [OK] h(Baderna) <= h(Višnjan) + c: 25.0 <= 20.0 + 13.0
+[CONDITION]: [OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0
+[CONDITION]: [OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0
+[CONDITION]: [OK] h(Buje) <= h(Grožnjan) + c: 21.0 <= 17.0 + 8.0
+[CONDITION]: [OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0
+[CONDITION]: [OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 35.0 + 15.0
+[CONDITION]: [OK] h(Buzet) <= h(Motovun) + c: 0.0 <= 12.0 + 18.0
+[CONDITION]: [OK] h(Grožnjan) <= h(Buje) + c: 17.0 <= 21.0 + 8.0
+[CONDITION]: [OK] h(Grožnjan) <= h(Motovun) + c: 17.0 <= 12.0 + 15.0
+[CONDITION]: [OK] h(Grožnjan) <= h(Višnjan) + c: 17.0 <= 20.0 + 19.0
+[CONDITION]: [OK] h(Kanfanar) <= h(Baderna) + c: 30.0 <= 25.0 + 19.0
+[CONDITION]: [OK] h(Kanfanar) <= h(Rovinj) + c: 30.0 <= 40.0 + 18.0
+[CONDITION]: [OK] h(Kanfanar) <= h(Vodnjan) + c: 30.0 <= 47.0 + 29.0
+[CONDITION]: [OK] h(Kanfanar) <= h(Žminj) + c: 30.0 <= 27.0 + 6.0
+[CONDITION]: [OK] h(Labin) <= h(Barban) + c: 35.0 <= 35.0 + 15.0
+[CONDITION]: [OK] h(Labin) <= h(Lupoglav) + c: 35.0 <= 35.0 + 42.0
+[CONDITION]: [ERR] h(Lupoglav) <= h(Buzet) + c: 35.0 <= 0.0 + 15.0
+[CONDITION]: [OK] h(Lupoglav) <= h(Labin) + c: 35.0 <= 35.0 + 42.0
+[CONDITION]: [OK] h(Lupoglav) <= h(Opatija) + c: 35.0 <= 26.0 + 29.0
+[CONDITION]: [OK] h(Lupoglav) <= h(Pazin) + c: 35.0 <= 40.0 + 23.0
+[CONDITION]: [OK] h(Medulin) <= h(Pula) + c: 61.0 <= 57.0 + 9.0
+[CONDITION]: [OK] h(Motovun) <= h(Buzet) + c: 12.0 <= 0.0 + 18.0
+[CONDITION]: [OK] h(Motovun) <= h(Grožnjan) + c: 12.0 <= 17.0 + 15.0
+[CONDITION]: [OK] h(Motovun) <= h(Pazin) + c: 12.0 <= 40.0 + 20.0
+[CONDITION]: [OK] h(Opatija) <= h(Lupoglav) + c: 26.0 <= 35.0 + 29.0
+[CONDITION]: [OK] h(Pazin) <= h(Baderna) + c: 40.0 <= 25.0 + 19.0
+[CONDITION]: [OK] h(Pazin) <= h(Lupoglav) + c: 40.0 <= 35.0 + 23.0
+[CONDITION]: [ERR] h(Pazin) <= h(Motovun) + c: 40.0 <= 12.0 + 20.0
+[CONDITION]: [OK] h(Pazin) <= h(Žminj) + c: 40.0 <= 27.0 + 17.0
+[CONDITION]: [OK] h(Poreč) <= h(Baderna) + c: 32.0 <= 25.0 + 14.0
+[CONDITION]: [OK] h(Pula) <= h(Barban) + c: 57.0 <= 35.0 + 28.0
+[CONDITION]: [OK] h(Pula) <= h(Medulin) + c: 57.0 <= 61.0 + 9.0
+[CONDITION]: [OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0
+[CONDITION]: [OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0
+[CONDITION]: [OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0
+[CONDITION]: [OK] h(Višnjan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0
+[CONDITION]: [OK] h(Višnjan) <= h(Grožnjan) + c: 20.0 <= 17.0 + 19.0
+[CONDITION]: [OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0
+[CONDITION]: [OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0
+[CONDITION]: [OK] h(Žminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0
+[CONDITION]: [OK] h(Žminj) <= h(Pazin) + c: 27.0 <= 40.0 + 17.0
+[CONCLUSION]: Heuristic is not consistent.

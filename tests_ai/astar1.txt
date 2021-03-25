@@ -1,0 +1,8 @@
+--alg astar --ss ai.txt --h ai_fail.txt
+
+# A-STAR ai_fail.txt
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 6
+[PATH_LENGTH]: 3
+[TOTAL_COST]: 21.0
+[PATH]: enroll_artificial_intelligence => fail_lab => fail_course

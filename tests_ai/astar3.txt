@@ -1,0 +1,8 @@
+--alg astar --ss istra.txt --h istra_pessimistic_heuristic.txt
+
+# A-STAR istra_pessimistic_heuristic.txt
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 13
+[PATH_LENGTH]: 7
+[TOTAL_COST]: 102.0
+[PATH]: Pula => Vodnjan => Kanfanar => Žminj => Pazin => Motovun => Buzet

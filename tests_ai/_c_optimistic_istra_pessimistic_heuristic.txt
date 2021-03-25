@@ -1,0 +1,23 @@
+--ss istra.txt --h istra_pessimistic_heuristic.txt --check-optimistic 
+
+# HEURISTIC-OPTIMISTIC istra_pessimistic_heuristic.txt
+[CONDITION]: [OK] h(Baderna) < h*: 25.0 < 57.0
+[CONDITION]: [OK] h(Barban) < h*: 35.0 < 72.0
+[CONDITION]: [OK] h(Buje) < h*: 21.0 < 41.0
+[CONDITION]: [OK] h(Buzet) < h*: 0.0 < 0.0
+[CONDITION]: [OK] h(Grožnjan) < h*: 17.0 < 33.0
+[CONDITION]: [OK] h(Kanfanar) < h*: 30.0 < 61.0
+[CONDITION]: [OK] h(Labin) < h*: 35.0 < 57.0
+[CONDITION]: [ERR] h(Lupoglav) < h*: 35.0 < 15.0
+[CONDITION]: [OK] h(Medulin) < h*: 61.0 < 109.0
+[CONDITION]: [OK] h(Motovun) < h*: 12.0 < 18.0
+[CONDITION]: [OK] h(Opatija) < h*: 26.0 < 44.0
+[CONDITION]: [ERR] h(Pazin) < h*: 40.0 < 38.0
+[CONDITION]: [OK] h(Poreč) < h*: 32.0 < 71.0
+[CONDITION]: [OK] h(Pula) < h*: 57.0 < 100.0
+[CONDITION]: [OK] h(Rovinj) < h*: 40.0 < 79.0
+[CONDITION]: [OK] h(Umag) < h*: 31.0 < 54.0
+[CONDITION]: [OK] h(Višnjan) < h*: 20.0 < 52.0
+[CONDITION]: [OK] h(Vodnjan) < h*: 47.0 < 90.0
+[CONDITION]: [OK] h(Žminj) < h*: 27.0 < 55.0
+[CONCLUSION]: Heuristic is not optimistic.

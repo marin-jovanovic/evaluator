@@ -1,0 +1,8 @@
+--alg bfs --ss istra.txt 
+
+# BFS
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 11
+[PATH_LENGTH]: 5
+[TOTAL_COST]: 100.0
+[PATH]: Pula => Barban => Labin => Lupoglav => Buzet

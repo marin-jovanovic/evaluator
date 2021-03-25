@@ -1,0 +1,8 @@
+--alg astar --ss ai.txt --h ai_pass.txt
+
+# A-STAR ai_pass.txt
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 4
+[PATH_LENGTH]: 4
+[TOTAL_COST]: 17.0
+[PATH]: enroll_artificial_intelligence => complete_lab => pass_continuous => pass_course

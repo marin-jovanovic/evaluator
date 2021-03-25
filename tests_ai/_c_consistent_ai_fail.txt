@@ -1,0 +1,16 @@
+--ss ai.txt --h ai_fail.txt --check-consistent
+
+# HEURISTIC-CONSISTENT ai_fail.txt
+[CONDITION]: [ERR] h(complete_lab) <= h(fail_continuous) + c: 10.0 <= 6.0 + 1.0
+[CONDITION]: [OK] h(complete_lab) <= h(pass_continuous) + c: 10.0 <= 20.0 + 12.0
+[CONDITION]: [ERR] h(enroll_artificial_intelligence) <= h(complete_lab) + c: 17.0 <= 10.0 + 4.0
+[CONDITION]: [ERR] h(enroll_artificial_intelligence) <= h(fail_lab) + c: 17.0 <= 1.0 + 1.0
+[CONDITION]: [OK] h(fail_continuous) <= h(fail_exam) + c: 6.0 <= 5.0 + 1.0
+[CONDITION]: [OK] h(fail_continuous) <= h(pass_exam) + c: 6.0 <= 1.0 + 16.0
+[CONDITION]: [OK] h(fail_exam) <= h(fail_course) + c: 5.0 <= 0.0 + 20.0
+[CONDITION]: [OK] h(fail_lab) <= h(complete_lab) + c: 1.0 <= 10.0 + 4.0
+[CONDITION]: [OK] h(fail_lab) <= h(fail_course) + c: 1.0 <= 0.0 + 20.0
+[CONDITION]: [OK] h(fail_lab) <= h(fail_lab) + c: 1.0 <= 1.0 + 1.0
+[CONDITION]: [ERR] h(pass_continuous) <= h(pass_course) + c: 20.0 <= 0.0 + 1.0
+[CONDITION]: [OK] h(pass_exam) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
+[CONCLUSION]: Heuristic is not consistent.
