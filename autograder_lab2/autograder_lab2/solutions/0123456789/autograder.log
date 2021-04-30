@@ -1,0 +1,269 @@
+autograder
+================
+
+=== UNARCHIVE AND STRUCTURE ===
+OK!
+
+=== COMPILE ===
+Skipping (python)
+
+=== EVALUATION ===
+
+=== TOTAL RESULTS ===
+0 / 25 tests passed. (0.0%)
+
+== RESOLUTION ==
+  Passed 0 / 20 tests.
+
+- Failed test: python solution.py resolution resolution_heldout_small.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_heldout_small_2.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_heldout_tautology.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_heldout_tautology_2.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_heldout_tautology_3.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_heldout_tautology_4.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_heldout_large_chain.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_heldout_goal_isnegated.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_small_example.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_ai.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_chicken_alfredo_nomilk.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_chicken_alfredo.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_chicken_broccoli_alfredo_big.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_coffee.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_coffee_noheater.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_coffee_or_tea.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_coffee_or_tea_nopowder.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_small_example_2.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_small_example_3.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py resolution resolution_small_example_4.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+== COOKING ==
+  Passed 0 / 5 tests.
+
+- Failed test: python solution.py cooking cooking_heldout_large_chain.txt cooking_heldout_large_chain_input.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py cooking cooking_coffee.txt cooking_coffee_input.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py cooking cooking_chicken_alfredo.txt cooking_chicken_alfredo_input.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py cooking cooking_chicken_alfredo_nomilk.txt cooking_chicken_alfredo_nomilk_input.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+
+
+- Failed test: python solution.py cooking cooking_chicken_broccoli_alfredo_big.txt cooking_chicken_broccoli_alfredo_big_input.txt
+Execution failed with error (process returned non-zero exit code):
+Traceback (most recent call last):
+  File "solution.py", line 537, in <module>
+    main()
+  File "solution.py", line 233, in main
+    input_lines = [i for i in open(r"{}".format(clauses_path),
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../lab2_files/resolution_ai.txt'
+

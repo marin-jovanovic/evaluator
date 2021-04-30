@@ -1,0 +1,216 @@
+{
+  "cooking": [
+    {
+      "execution_args": "cooking cooking_coffee.txt cooking_coffee_input.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "ordered",
+          "value": [
+            "water is true",
+            "hot_water is true",
+            "coffee is true",
+            "hot_water is unknown",
+            "coffee is unknown",
+            "coffee is true"
+          ]
+        }
+      },
+      "expected_output_full": "Constructed with knowledge:\ncoffee_powder\n~heater v ~water v hot_water\n~coffee_powder v ~hot_water v coffee\nwater\nheater\n\nUser's command: water ?\n1. water\n2. ~water\n===============\n3. NIL (1, 2)\n===============\n[CONCLUSION]: water is true\n\nUser's command: hot_water ?\n1. water\n2. heater\n3. ~heater v ~water v hot_water\n4. ~hot_water\n===============\n5. ~heater v ~water (3, 4)\n6. ~water (2, 5)\n7. NIL (1, 6)\n===============\n[CONCLUSION]: hot_water is true\n\nUser's command: coffee ?\n1. coffee_powder\n2. water\n3. heater\n4. ~heater v ~water v hot_water\n5. ~coffee_powder v ~hot_water v coffee\n6. ~coffee\n===============\n7. ~coffee_powder v ~hot_water (5, 6)\n8. ~coffee_powder v ~heater v ~water (4, 7)\n9. ~coffee_powder v ~water (3, 8)\n10. ~coffee_powder (2, 9)\n11. NIL (1, 10)\n===============\n[CONCLUSION]: coffee is true\n\nUser's command: heater -\nremoved heater\n\nUser's command: hot_water ?\n[CONCLUSION]: hot_water is unknown\n\nUser's command: coffee ?\n[CONCLUSION]: coffee is unknown\n\nUser's command: heater +\nAdded heater\n\nUser's command: coffee ?\n1. coffee_powder\n2. water\n3. heater\n4. ~heater v ~water v hot_water\n5. ~coffee_powder v ~hot_water v coffee\n6. ~coffee\n===============\n7. ~coffee_powder v ~hot_water (5, 6)\n8. ~coffee_powder v ~heater v ~water (4, 7)\n9. ~coffee_powder v ~water (3, 8)\n10. ~coffee_powder (2, 9)\n11. NIL (1, 10)\n===============\n[CONCLUSION]: coffee is true",
+      "name": "cooking cooking_coffee.txt cooking_coffee_input.txt",
+      "task": "cooking"
+    },
+    {
+      "execution_args": "cooking cooking_chicken_alfredo.txt cooking_chicken_alfredo_input.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "ordered",
+          "value": [
+            "alfredo_sauce is true",
+            "chicken_alfredo is true",
+            "chicken_alfredo is unknown"
+          ]
+        }
+      },
+      "expected_output_full": "Constructed with knowledge:\nmilk\npasta\nflour\nolive_oil\n~pasta v ~olive_oil v chicken_alfredo v ~chicken v ~alfredo_sauce\nbutter\ncream\nchicken\nparmesan\n~flour v alfredo_sauce v ~butter v ~parmesan v ~cream v ~milk\n\nUser's command: alfredo_sauce ?\n1. milk\n2. flour\n3. butter\n4. cream\n5. parmesan\n6. ~flour v alfredo_sauce v ~butter v ~parmesan v ~cream v ~milk\n7. ~alfredo_sauce\n===============\n8. ~flour v ~parmesan v ~cream v ~milk v ~butter (6, 7)\n9. ~cream v ~milk v ~butter v ~flour (5, 8)\n10. ~flour v ~milk v ~butter (4, 9)\n11. ~milk v ~flour (3, 10)\n12. ~milk (2, 11)\n13. NIL (1, 12)\n===============\n[CONCLUSION]: alfredo_sauce is true\n\nUser's command: chicken_alfredo ?\n1. milk\n2. flour\n3. cream\n4. pasta\n5. olive_oil\n6. parmesan\n7. butter\n8. chicken\n9. ~flour v alfredo_sauce v ~butter v ~parmesan v ~cream v ~milk\n10. ~pasta v ~olive_oil v chicken_alfredo v ~chicken v ~alfredo_sauce\n11. ~chicken_alfredo\n===============\n12. ~chicken v ~pasta v ~alfredo_sauce v ~olive_oil (10, 11)\n13. ~pasta v ~flour v ~olive_oil v ~butter v ~chicken v ~parmesan v ~cream v ~milk (9, 12)\n14. ~pasta v ~flour v ~parmesan v ~cream v ~milk v ~olive_oil v ~butter (8, 13)\n15. ~pasta v ~flour v ~parmesan v ~cream v ~milk v ~olive_oil (7, 14)\n16. ~pasta v ~cream v ~olive_oil v ~flour v ~milk (6, 15)\n17. ~cream v ~pasta v ~milk v ~flour (5, 16)\n18. ~cream v ~milk v ~flour (4, 17)\n19. ~milk v ~flour (3, 18)\n20. ~milk (2, 19)\n21. NIL (1, 20)\n===============\n[CONCLUSION]: chicken_alfredo is true\n\nUser's command: butter -\nremoved butter\n\nUser's command: chicken_alfredo ?\n[CONCLUSION]: chicken_alfredo is unknown",
+      "name": "cooking cooking_chicken_alfredo.txt cooking_chicken_alfredo_input.txt",
+      "task": "cooking"
+    },
+    {
+      "execution_args": "cooking cooking_chicken_alfredo_nomilk.txt cooking_chicken_alfredo_nomilk_input.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "ordered",
+          "value": [
+            "alfredo_sauce is unknown",
+            "alfredo_sauce is true",
+            "alfredo_sauce is unknown",
+            "chicken_alfredo is true"
+          ]
+        }
+      },
+      "expected_output_full": "Constructed with knowledge:\ncream\nolive_oil\nchicken\n~pasta v ~alfredo_sauce v ~chicken v chicken_alfredo v ~olive_oil\nparmesan\nbutter\n~parmesan v ~cream v ~butter v alfredo_sauce v ~flour v ~milk\npasta\nflour\n\nUser's command: alfredo_sauce ?\n[CONCLUSION]: alfredo_sauce is unknown\n\nUser's command: milk +\nAdded milk\n\nUser's command: alfredo_sauce ?\n1. cream\n2. milk\n3. flour\n4. parmesan\n5. butter\n6. ~parmesan v ~cream v ~butter v alfredo_sauce v ~flour v ~milk\n7. ~alfredo_sauce\n===============\n8. ~parmesan v ~cream v ~flour v ~milk v ~butter (6, 7)\n9. ~parmesan v ~milk v ~cream v ~flour (5, 8)\n10. ~milk v ~cream v ~flour (4, 9)\n11. ~milk v ~cream (3, 10)\n12. ~cream (2, 11)\n13. NIL (1, 12)\n===============\n[CONCLUSION]: alfredo_sauce is true\n\nUser's command: butter -\nremoved butter\n\nUser's command: alfredo_sauce ?\n[CONCLUSION]: alfredo_sauce is unknown\n\nUser's command: butter +\nAdded butter\n\nUser's command: chicken_alfredo ?\n1. cream\n2. chicken\n3. flour\n4. milk\n5. olive_oil\n6. pasta\n7. parmesan\n8. butter\n9. ~parmesan v ~cream v ~butter v alfredo_sauce v ~flour v ~milk\n10. ~pasta v ~alfredo_sauce v ~chicken v chicken_alfredo v ~olive_oil\n11. ~chicken_alfredo\n===============\n12. ~chicken v ~pasta v ~alfredo_sauce v ~olive_oil (10, 11)\n13. ~parmesan v ~pasta v ~cream v ~butter v ~flour v ~chicken v ~milk v ~olive_oil (9, 12)\n14. ~parmesan v ~pasta v ~cream v ~flour v ~chicken v ~milk v ~olive_oil (8, 13)\n15. ~pasta v ~cream v ~flour v ~chicken v ~milk v ~olive_oil (7, 14)\n16. ~cream v ~flour v ~chicken v ~milk v ~olive_oil (6, 15)\n17. ~chicken v ~milk v ~cream v ~flour (5, 16)\n18. ~chicken v ~cream v ~flour (4, 17)\n19. ~chicken v ~cream (3, 18)\n20. ~cream (2, 19)\n21. NIL (1, 20)\n===============\n[CONCLUSION]: chicken_alfredo is true",
+      "name": "cooking cooking_chicken_alfredo_nomilk.txt cooking_chicken_alfredo_nomilk_input.txt",
+      "task": "cooking"
+    },
+    {
+      "execution_args": "cooking cooking_chicken_broccoli_alfredo_big.txt cooking_chicken_broccoli_alfredo_big_input.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "ordered",
+          "value": [
+            "chicken_broccoli_alfredo is true"
+          ]
+        }
+      },
+      "expected_output_full": "Constructed with knowledge:\npasta\nbroccoli\nflour\nparsley\ncream\n~chicken v ~olive_oil v diced_chicken\nmilk\nbutter\nparmesan\nolive_oil\nchicken\n~broccoli v chicken_broccoli_alfredo v ~pasta v ~diced_chicken v ~alfredo_sauce\n~milk v ~parmesan v ~butter v ~flour v alfredo_sauce v ~cream\n\nUser's command: chicken_broccoli_alfredo ?\n1. pasta\n2. cream\n3. olive_oil\n4. broccoli\n5. parmesan\n6. butter\n7. flour\n8. milk\n9. ~milk v ~parmesan v ~butter v ~flour v alfredo_sauce v ~cream\n10. chicken\n11. ~chicken v ~olive_oil v diced_chicken\n12. ~broccoli v chicken_broccoli_alfredo v ~pasta v ~diced_chicken v ~alfredo_sauce\n13. ~chicken_broccoli_alfredo\n===============\n14. ~broccoli v ~pasta v ~diced_chicken v ~alfredo_sauce (12, 13)\n15. ~chicken v ~broccoli v ~pasta v ~olive_oil v ~alfredo_sauce (11, 14)\n16. ~olive_oil v ~broccoli v ~pasta v ~alfredo_sauce (10, 15)\n17. ~milk v ~parmesan v ~butter v ~olive_oil v ~flour v ~broccoli v ~cream v ~pasta (9, 16)\n18. ~parmesan v ~flour v ~broccoli v ~pasta v ~butter v ~cream v ~olive_oil (8, 17)\n19. ~parmesan v ~broccoli v ~pasta v ~butter v ~cream v ~olive_oil (7, 18)\n20. ~parmesan v ~broccoli v ~pasta v ~cream v ~olive_oil (6, 19)\n21. ~cream v ~broccoli v ~olive_oil v ~pasta (5, 20)\n22. ~cream v ~pasta v ~olive_oil (4, 21)\n23. ~cream v ~pasta (3, 22)\n24. ~pasta (2, 23)\n25. NIL (1, 24)\n===============\n[CONCLUSION]: chicken_broccoli_alfredo is true",
+      "name": "cooking cooking_chicken_broccoli_alfredo_big.txt cooking_chicken_broccoli_alfredo_big_input.txt",
+      "task": "cooking"
+    }
+  ],
+  "resolution": [
+    {
+      "execution_args": "resolution resolution_small_example.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "c is true"
+        }
+      },
+      "expected_output_full": "1. a\n2. b v ~a\n3. ~b v c\n4. ~c\n===============\n5. ~b (3, 4)\n6. ~a (2, 5)\n7. NIL (1, 6)\n===============\n[CONCLUSION]: c is true",
+      "name": "resolution resolution_small_example.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_ai.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "prolaz_predmeta is true"
+        }
+      },
+      "expected_output_full": "1. lab1\n2. prolaz_labosi v ~lab1\n3. ispitni_rok1\n4. prolaz_kontinuirano v prolaz_rok v ~prolaz_labosi v ~ispitni_rok1\n5. prolaz_predmeta v ~prolaz_rok\n8. ~prolaz_predmeta\n7. prolaz_predmeta v ~prolaz_kontinuirano\n8. ~prolaz_predmeta\n===============\n9. ~prolaz_rok (5, 8)\n10. prolaz_kontinuirano v ~prolaz_labosi v ~ispitni_rok1 (4, 9)\n11. prolaz_kontinuirano v ~prolaz_labosi (3, 10)\n12. prolaz_kontinuirano v ~lab1 (2, 11)\n13. ~prolaz_kontinuirano (7, 8)\n14. ~lab1 (12, 13)\n15. NIL (1, 14)\n===============\n[CONCLUSION]: prolaz_predmeta is true",
+      "name": "resolution resolution_ai.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_chicken_alfredo_nomilk.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "chicken_alfredo is unknown"
+        }
+      },
+      "expected_output_full": "1. pasta\n2. olive_oil\n3. chicken\n4. butter\n5. flour\n6. cream\n7. parmesan\n8. ~flour v ~butter v ~cream v ~parmesan v alfredo_sauce v ~milk\n9. ~pasta v ~chicken v ~olive_oil v ~alfredo_sauce v chicken_alfredo\n10. ~chicken_alfredo\n===============\n[CONCLUSION]: chicken_alfredo is unknown",
+      "name": "resolution resolution_chicken_alfredo_nomilk.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_chicken_alfredo.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "chicken_alfredo is true"
+        }
+      },
+      "expected_output_full": "1. cream\n2. parmesan\n3. chicken\n4. flour\n5. butter\n6. olive_oil\n7. milk\n8. ~flour v ~cream v ~milk v ~butter v ~parmesan v alfredo_sauce\n9. pasta\n10. ~olive_oil v chicken_alfredo v ~chicken v ~alfredo_sauce v ~pasta\n11. ~chicken_alfredo\n===============\n12. ~chicken v ~olive_oil v ~alfredo_sauce v ~pasta (10, 11)\n13. ~chicken v ~olive_oil v ~alfredo_sauce (9, 12)\n14. ~flour v ~milk v ~butter v ~parmesan v ~chicken v ~cream v ~olive_oil (8, 13)\n15. ~flour v ~chicken v ~olive_oil v ~butter v ~parmesan v ~cream (7, 14)\n16. ~flour v ~chicken v ~butter v ~parmesan v ~cream (6, 15)\n17. ~flour v ~chicken v ~cream v ~parmesan (5, 16)\n18. ~chicken v ~parmesan v ~cream (4, 17)\n19. ~parmesan v ~cream (3, 18)\n20. ~cream (2, 19)\n21. NIL (1, 20)\n===============\n[CONCLUSION]: chicken_alfredo is true",
+      "name": "resolution resolution_chicken_alfredo.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_chicken_broccoli_alfredo_big.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "chicken_broccoli_alfredo is true"
+        }
+      },
+      "expected_output_full": "1. butter\n2. cream\n3. broccoli\n4. chicken\n5. flour\n6. milk\n7. olive_oil\n8. ~chicken v ~olive_oil v diced_chicken\n9. pasta\n10. parmesan\n11. alfredo_sauce v ~parmesan v ~butter v ~flour v ~milk v ~cream\n12. ~diced_chicken v ~broccoli v ~alfredo_sauce v chicken_broccoli_alfredo v ~pasta\n13. ~chicken_broccoli_alfredo\n===============\n14. ~pasta v ~broccoli v ~diced_chicken v ~alfredo_sauce (12, 13)\n15. ~diced_chicken v ~broccoli v ~parmesan v ~butter v ~flour v ~milk v ~pasta v ~cream (11, 14)\n16. ~butter v ~flour v ~milk v ~diced_chicken v ~pasta v ~broccoli v ~cream (10, 15)\n17. ~butter v ~flour v ~milk v ~diced_chicken v ~broccoli v ~cream (9, 16)\n18. ~butter v ~flour v ~milk v ~chicken v ~broccoli v ~olive_oil v ~cream (8, 17)\n19. ~butter v ~flour v ~milk v ~chicken v ~broccoli v ~cream (7, 18)\n20. ~butter v ~flour v ~chicken v ~broccoli v ~cream (6, 19)\n21. ~chicken v ~butter v ~broccoli v ~cream (5, 20)\n22. ~butter v ~broccoli v ~cream (4, 21)\n23. ~butter v ~cream (3, 22)\n24. ~butter (2, 23)\n25. NIL (1, 24)\n===============\n[CONCLUSION]: chicken_broccoli_alfredo is true",
+      "name": "resolution resolution_chicken_broccoli_alfredo_big.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_coffee.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "coffee is true"
+        }
+      },
+      "expected_output_full": "1. water\n2. coffee_powder\n3. heater\n4. ~heater v ~water v hot_water\n5. coffee v ~hot_water v ~coffee_powder\n6. ~coffee\n===============\n7. ~hot_water v ~coffee_powder (5, 6)\n8. ~heater v ~water v ~coffee_powder (4, 7)\n9. ~water v ~coffee_powder (3, 8)\n10. ~water (2, 9)\n11. NIL (1, 10)\n===============\n[CONCLUSION]: coffee is true",
+      "name": "resolution resolution_coffee.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_coffee_noheater.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "coffee is unknown"
+        }
+      },
+      "expected_output_full": "1. water\n2. coffee_powder\n3. ~water v ~heater v hot_water\n4. ~coffee_powder v ~hot_water v coffee\n5. ~coffee\n===============\n[CONCLUSION]: coffee is unknown",
+      "name": "resolution resolution_coffee_noheater.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_coffee_or_tea.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "coffee v tea is true"
+        }
+      },
+      "expected_output_full": "1. water\n2. coffee_powder\n3. heater\n4. hot_water v ~water v ~heater\n5. ~coffee_powder v coffee v ~hot_water\n6. ~coffee\n===============\n7. ~coffee_powder v ~hot_water (5, 6)\n8. ~coffee_powder v ~water v ~heater (4, 7)\n9. ~coffee_powder v ~water (3, 8)\n10. ~water (2, 9)\n11. NIL (1, 10)\n===============\n[CONCLUSION]: coffee v tea is true",
+      "name": "resolution resolution_coffee_or_tea.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_coffee_or_tea_nopowder.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "coffee v tea is true"
+        }
+      },
+      "expected_output_full": "1. tea_bag\n2. water\n3. heater\n4. hot_water v ~heater v ~water\n5. ~hot_water v ~tea_bag v tea\n6. ~tea\n===============\n7. ~hot_water v ~tea_bag (5, 6)\n8. ~tea_bag v ~heater v ~water (4, 7)\n9. ~tea_bag v ~water (3, 8)\n10. ~tea_bag (2, 9)\n11. NIL (1, 10)\n===============\n[CONCLUSION]: coffee v tea is true",
+      "name": "resolution resolution_coffee_or_tea_nopowder.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_small_example_2.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "c is true"
+        }
+      },
+      "expected_output_full": "1. b\n2. a\n3. c v ~a v ~b\n4. ~c\n===============\n5. ~a v ~b (3, 4)\n6. ~b (2, 5)\n7. NIL (1, 6)\n===============\n[CONCLUSION]: c is true",
+      "name": "resolution resolution_small_example_2.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_small_example_3.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "c is unknown"
+        }
+      },
+      "expected_output_full": "1. ~a v b\n2. ~b v c\n3. ~c\n===============\n[CONCLUSION]: c is unknown",
+      "name": "resolution resolution_small_example_3.txt",
+      "task": "resolution"
+    },
+    {
+      "execution_args": "resolution resolution_small_example_4.txt",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "c v b is true"
+        }
+      },
+      "expected_output_full": "1. a\n2. ~a v b\n3. ~b\n===============\n4. ~a (2, 3)\n5. NIL (1, 4)\n===============\n[CONCLUSION]: c v b is true",
+      "name": "resolution resolution_small_example_4.txt",
+      "task": "resolution"
+    }
+  ]
+}
