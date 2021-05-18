@@ -139,17 +139,17 @@ def iterate_student_solutions(solutions_dir=None, evaluation_log_file=None,
             # [Assumption] The folder of the student solution (downloaded) should contain
             # _only_ one file -- the archive with the solution
             student_dir = os.path.join(solutions_dir, dir_name)
-            print(f"Directory: {student_dir}")
+            # print(f"Directory: {student_dir}")
             files = list(os.listdir(student_dir))  # should be of length 1
             files = [f for f in files if
                      f != 'autograder.log']  # if autograder.log already exists skip it
-            print(f"Files in directory: {files}")
+            # print(f"Files in directory: {files}")
 
             # inserted start
             #
             # todo make sure this is folder
             for file in os.listdir(student_dir):
-                print(file)
+                # print(file)
                 if file.__contains__("."):
                     continue
                 else:
@@ -163,7 +163,7 @@ def iterate_student_solutions(solutions_dir=None, evaluation_log_file=None,
 
             # [1] Extract the solution into a temporary directory
             with TemporaryDirectory() as tmpdir:
-                print(tmpdir)
+                # print(tmpdir)
 
                 # my add
                 from distutils.dir_util import copy_tree
