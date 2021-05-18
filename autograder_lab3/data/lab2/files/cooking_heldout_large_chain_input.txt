@@ -1,0 +1,30 @@
+B ?
+C ?
+D ?
+E ?
+F ?
+G ?
+~A v B -
+B ?
+~A v B +
+B ?
+~B v C -
+C ?
+~B v C +
+C ?
+~C v D -
+D ?
+~C v D +
+D ?
+~D v E -
+E ?
+~D v E +
+E ?
+~E v F -
+F ?
+~E v F +
+F ?
+~F v G -
+G ?
+~F v G +
+G ?

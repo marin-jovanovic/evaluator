@@ -1,0 +1,310 @@
+{
+  "A-STAR": [
+    {
+      "description": "Test for A-STAR on istra.txt state space with istra_heuristic.txt heuristic",
+      "execution_args": "--ss istra.txt --alg astar --h istra_heuristic.txt",
+      "expected_output_fields": {
+        "FOUND_SOLUTION": {
+          "match": "exact",
+          "value": "yes"
+        },
+        "PATH": {
+          "match": "ignored",
+          "value": "Pula => Barban => Labin => Lupoglav => Buzet"
+        },
+        "PATH_LENGTH": {
+          "match": "ignored",
+          "value": "5"
+        },
+        "STATES_VISITED": {
+          "match": "ignored",
+          "value": "14"
+        },
+        "TOTAL_COST": {
+          "match": "exact",
+          "value": "100.0"
+        }
+      },
+      "name": "A-STAR istra_heuristic.txt"
+    },
+    {
+      "description": "Test for A-STAR on istra.txt state space with istra_pessimistic_heuristic.txt heuristic",
+      "execution_args": "--ss istra.txt --alg astar --h istra_pessimistic_heuristic.txt",
+      "expected_output_fields": {
+        "FOUND_SOLUTION": {
+          "match": "exact",
+          "value": "yes"
+        },
+        "PATH": {
+          "match": "ignored",
+          "value": "Pula => Vodnjan => Kanfanar => \u017dminj => Pazin => Motovun => Buzet"
+        },
+        "PATH_LENGTH": {
+          "match": "ignored",
+          "value": "7"
+        },
+        "STATES_VISITED": {
+          "match": "ignored",
+          "value": "13"
+        },
+        "TOTAL_COST": {
+          "match": "exact",
+          "value": "102.0"
+        }
+      },
+      "name": "A-STAR istra_pessimistic_heuristic.txt"
+    }
+  ],
+  "BFS": [
+    {
+      "description": "Test for BFS on istra.txt state space",
+      "execution_args": "--ss istra.txt --alg bfs",
+      "expected_output_fields": {
+        "FOUND_SOLUTION": {
+          "match": "exact",
+          "value": "yes"
+        },
+        "PATH": {
+          "match": "exact",
+          "value": "Pula => Barban => Labin => Lupoglav => Buzet"
+        },
+        "PATH_LENGTH": {
+          "match": "exact",
+          "value": "5"
+        },
+        "STATES_VISITED": {
+          "match": "exact",
+          "value": "11"
+        },
+        "TOTAL_COST": {
+          "match": "exact",
+          "value": "100.0"
+        }
+      },
+      "name": "BFS"
+    }
+  ],
+  "HEURISTIC-CONSISTENT": [
+    {
+      "description": "Test for checking if istra_pessimistic_heuristic.txt heuristic is consistent",
+      "execution_args": "--ss istra.txt --h istra_pessimistic_heuristic.txt --check-consistent ",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "Heuristic is not consistent."
+        },
+        "CONDITIONS": {
+          "match": "contained",
+          "value": [
+            "[OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0",
+            "[OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 40.0 + 19.0",
+            "[OK] h(Baderna) <= h(Pore\u010d) + c: 25.0 <= 32.0 + 14.0",
+            "[OK] h(Baderna) <= h(Vi\u0161njan) + c: 25.0 <= 20.0 + 13.0",
+            "[OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0",
+            "[OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0",
+            "[OK] h(Buje) <= h(Gro\u017enjan) + c: 21.0 <= 17.0 + 8.0",
+            "[OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0",
+            "[OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 35.0 + 15.0",
+            "[OK] h(Buzet) <= h(Motovun) + c: 0.0 <= 12.0 + 18.0",
+            "[OK] h(Gro\u017enjan) <= h(Buje) + c: 17.0 <= 21.0 + 8.0",
+            "[OK] h(Gro\u017enjan) <= h(Motovun) + c: 17.0 <= 12.0 + 15.0",
+            "[OK] h(Gro\u017enjan) <= h(Vi\u0161njan) + c: 17.0 <= 20.0 + 19.0",
+            "[OK] h(Kanfanar) <= h(Baderna) + c: 30.0 <= 25.0 + 19.0",
+            "[OK] h(Kanfanar) <= h(Rovinj) + c: 30.0 <= 40.0 + 18.0",
+            "[OK] h(Kanfanar) <= h(Vodnjan) + c: 30.0 <= 47.0 + 29.0",
+            "[OK] h(Kanfanar) <= h(\u017dminj) + c: 30.0 <= 27.0 + 6.0",
+            "[OK] h(Labin) <= h(Barban) + c: 35.0 <= 35.0 + 15.0",
+            "[OK] h(Labin) <= h(Lupoglav) + c: 35.0 <= 35.0 + 42.0",
+            "[ERR] h(Lupoglav) <= h(Buzet) + c: 35.0 <= 0.0 + 15.0",
+            "[OK] h(Lupoglav) <= h(Labin) + c: 35.0 <= 35.0 + 42.0",
+            "[OK] h(Lupoglav) <= h(Opatija) + c: 35.0 <= 26.0 + 29.0",
+            "[OK] h(Lupoglav) <= h(Pazin) + c: 35.0 <= 40.0 + 23.0",
+            "[OK] h(Medulin) <= h(Pula) + c: 61.0 <= 57.0 + 9.0",
+            "[OK] h(Motovun) <= h(Buzet) + c: 12.0 <= 0.0 + 18.0",
+            "[OK] h(Motovun) <= h(Gro\u017enjan) + c: 12.0 <= 17.0 + 15.0",
+            "[OK] h(Motovun) <= h(Pazin) + c: 12.0 <= 40.0 + 20.0",
+            "[OK] h(Opatija) <= h(Lupoglav) + c: 26.0 <= 35.0 + 29.0",
+            "[OK] h(Pazin) <= h(Baderna) + c: 40.0 <= 25.0 + 19.0",
+            "[OK] h(Pazin) <= h(Lupoglav) + c: 40.0 <= 35.0 + 23.0",
+            "[ERR] h(Pazin) <= h(Motovun) + c: 40.0 <= 12.0 + 20.0",
+            "[OK] h(Pazin) <= h(\u017dminj) + c: 40.0 <= 27.0 + 17.0",
+            "[OK] h(Pore\u010d) <= h(Baderna) + c: 32.0 <= 25.0 + 14.0",
+            "[OK] h(Pula) <= h(Barban) + c: 57.0 <= 35.0 + 28.0",
+            "[OK] h(Pula) <= h(Medulin) + c: 57.0 <= 61.0 + 9.0",
+            "[OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0",
+            "[OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0",
+            "[OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0",
+            "[OK] h(Vi\u0161njan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0",
+            "[OK] h(Vi\u0161njan) <= h(Gro\u017enjan) + c: 20.0 <= 17.0 + 19.0",
+            "[OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0",
+            "[OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0",
+            "[OK] h(\u017dminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0",
+            "[OK] h(\u017dminj) <= h(Pazin) + c: 27.0 <= 40.0 + 17.0"
+          ]
+        }
+      },
+      "name": "HEURISTIC-CONSISTENT istra_pessimistic_heuristic.txt"
+    },
+    {
+      "description": "Test for checking if istra_heuristic.txt heuristic is consistent",
+      "execution_args": "--ss istra.txt --h istra_heuristic.txt --check-consistent ",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "Heuristic is consistent."
+        },
+        "CONDITIONS": {
+          "match": "contained",
+          "value": [
+            "[OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0",
+            "[OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 17.0 + 19.0",
+            "[OK] h(Baderna) <= h(Pore\u010d) + c: 25.0 <= 32.0 + 14.0",
+            "[OK] h(Baderna) <= h(Vi\u0161njan) + c: 25.0 <= 20.0 + 13.0",
+            "[OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0",
+            "[OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0",
+            "[OK] h(Buje) <= h(Gro\u017enjan) + c: 21.0 <= 17.0 + 8.0",
+            "[OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0",
+            "[OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 13.0 + 15.0",
+            "[OK] h(Buzet) <= h(Motovun) + c: 0.0 <= 12.0 + 18.0",
+            "[OK] h(Gro\u017enjan) <= h(Buje) + c: 17.0 <= 21.0 + 8.0",
+            "[OK] h(Gro\u017enjan) <= h(Motovun) + c: 17.0 <= 12.0 + 15.0",
+            "[OK] h(Gro\u017enjan) <= h(Vi\u0161njan) + c: 17.0 <= 20.0 + 19.0",
+            "[OK] h(Kanfanar) <= h(Baderna) + c: 30.0 <= 25.0 + 19.0",
+            "[OK] h(Kanfanar) <= h(Rovinj) + c: 30.0 <= 40.0 + 18.0",
+            "[OK] h(Kanfanar) <= h(Vodnjan) + c: 30.0 <= 47.0 + 29.0",
+            "[OK] h(Kanfanar) <= h(\u017dminj) + c: 30.0 <= 27.0 + 6.0",
+            "[OK] h(Labin) <= h(Barban) + c: 35.0 <= 35.0 + 15.0",
+            "[OK] h(Labin) <= h(Lupoglav) + c: 35.0 <= 13.0 + 42.0",
+            "[OK] h(Lupoglav) <= h(Buzet) + c: 13.0 <= 0.0 + 15.0",
+            "[OK] h(Lupoglav) <= h(Labin) + c: 13.0 <= 35.0 + 42.0",
+            "[OK] h(Lupoglav) <= h(Opatija) + c: 13.0 <= 26.0 + 29.0",
+            "[OK] h(Lupoglav) <= h(Pazin) + c: 13.0 <= 17.0 + 23.0",
+            "[OK] h(Medulin) <= h(Pula) + c: 61.0 <= 57.0 + 9.0",
+            "[OK] h(Motovun) <= h(Buzet) + c: 12.0 <= 0.0 + 18.0",
+            "[OK] h(Motovun) <= h(Gro\u017enjan) + c: 12.0 <= 17.0 + 15.0",
+            "[OK] h(Motovun) <= h(Pazin) + c: 12.0 <= 17.0 + 20.0",
+            "[OK] h(Opatija) <= h(Lupoglav) + c: 26.0 <= 13.0 + 29.0",
+            "[OK] h(Pazin) <= h(Baderna) + c: 17.0 <= 25.0 + 19.0",
+            "[OK] h(Pazin) <= h(Lupoglav) + c: 17.0 <= 13.0 + 23.0",
+            "[OK] h(Pazin) <= h(Motovun) + c: 17.0 <= 12.0 + 20.0",
+            "[OK] h(Pazin) <= h(\u017dminj) + c: 17.0 <= 27.0 + 17.0",
+            "[OK] h(Pore\u010d) <= h(Baderna) + c: 32.0 <= 25.0 + 14.0",
+            "[OK] h(Pula) <= h(Barban) + c: 57.0 <= 35.0 + 28.0",
+            "[OK] h(Pula) <= h(Medulin) + c: 57.0 <= 61.0 + 9.0",
+            "[OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0",
+            "[OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0",
+            "[OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0",
+            "[OK] h(Vi\u0161njan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0",
+            "[OK] h(Vi\u0161njan) <= h(Gro\u017enjan) + c: 20.0 <= 17.0 + 19.0",
+            "[OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0",
+            "[OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0",
+            "[OK] h(\u017dminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0",
+            "[OK] h(\u017dminj) <= h(Pazin) + c: 27.0 <= 17.0 + 17.0"
+          ]
+        }
+      },
+      "name": "HEURISTIC-CONSISTENT istra_heuristic.txt"
+    }
+  ],
+  "HEURISTIC-OPTIMISTIC": [
+    {
+      "description": "Test for checking if istra_pessimistic_heuristic.txt heuristic is optimistic",
+      "execution_args": "--ss istra.txt --h istra_pessimistic_heuristic.txt --check-optimistic ",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "Heuristic is not optimistic."
+        },
+        "CONDITIONS": {
+          "match": "contained",
+          "value": [
+            "[OK] h(Baderna) <= h*: 25.0 <= 57.0",
+            "[OK] h(Barban) <= h*: 35.0 <= 72.0",
+            "[OK] h(Buje) <= h*: 21.0 <= 41.0",
+            "[OK] h(Buzet) <= h*: 0.0 <= 0.0",
+            "[OK] h(Gro\u017enjan) <= h*: 17.0 <= 33.0",
+            "[OK] h(Kanfanar) <= h*: 30.0 <= 61.0",
+            "[OK] h(Labin) <= h*: 35.0 <= 57.0",
+            "[ERR] h(Lupoglav) <= h*: 35.0 <= 15.0",
+            "[OK] h(Medulin) <= h*: 61.0 <= 109.0",
+            "[OK] h(Motovun) <= h*: 12.0 <= 18.0",
+            "[OK] h(Opatija) <= h*: 26.0 <= 44.0",
+            "[ERR] h(Pazin) <= h*: 40.0 <= 38.0",
+            "[OK] h(Pore\u010d) <= h*: 32.0 <= 71.0",
+            "[OK] h(Pula) <= h*: 57.0 <= 100.0",
+            "[OK] h(Rovinj) <= h*: 40.0 <= 79.0",
+            "[OK] h(Umag) <= h*: 31.0 <= 54.0",
+            "[OK] h(Vi\u0161njan) <= h*: 20.0 <= 52.0",
+            "[OK] h(Vodnjan) <= h*: 47.0 <= 90.0",
+            "[OK] h(\u017dminj) <= h*: 27.0 <= 55.0"
+          ]
+        }
+      },
+      "name": "HEURISTIC-OPTIMISTIC istra_pessimistic_heuristic.txt"
+    },
+    {
+      "description": "Test for checking if istra_heuristic.txt heuristic is optimistic",
+      "execution_args": "--ss istra.txt --h istra_heuristic.txt --check-optimistic ",
+      "expected_output_fields": {
+        "CONCLUSION": {
+          "match": "exact",
+          "value": "Heuristic is optimistic."
+        },
+        "CONDITIONS": {
+          "match": "contained",
+          "value": [
+            "[OK] h(Baderna) <= h*: 25.0 <= 57.0",
+            "[OK] h(Barban) <= h*: 35.0 <= 72.0",
+            "[OK] h(Buje) <= h*: 21.0 <= 41.0",
+            "[OK] h(Buzet) <= h*: 0.0 <= 0.0",
+            "[OK] h(Gro\u017enjan) <= h*: 17.0 <= 33.0",
+            "[OK] h(Kanfanar) <= h*: 30.0 <= 61.0",
+            "[OK] h(Labin) <= h*: 35.0 <= 57.0",
+            "[OK] h(Lupoglav) <= h*: 13.0 <= 15.0",
+            "[OK] h(Medulin) <= h*: 61.0 <= 109.0",
+            "[OK] h(Motovun) <= h*: 12.0 <= 18.0",
+            "[OK] h(Opatija) <= h*: 26.0 <= 44.0",
+            "[OK] h(Pazin) <= h*: 17.0 <= 38.0",
+            "[OK] h(Pore\u010d) <= h*: 32.0 <= 71.0",
+            "[OK] h(Pula) <= h*: 57.0 <= 100.0",
+            "[OK] h(Rovinj) <= h*: 40.0 <= 79.0",
+            "[OK] h(Umag) <= h*: 31.0 <= 54.0",
+            "[OK] h(Vi\u0161njan) <= h*: 20.0 <= 52.0",
+            "[OK] h(Vodnjan) <= h*: 47.0 <= 90.0",
+            "[OK] h(\u017dminj) <= h*: 27.0 <= 55.0"
+          ]
+        }
+      },
+      "name": "HEURISTIC-OPTIMISTIC istra_heuristic.txt"
+    }
+  ],
+  "UCS": [
+    {
+      "description": "Test for UCS on istra.txt state space",
+      "execution_args": "--ss istra.txt --alg ucs",
+      "expected_output_fields": {
+        "FOUND_SOLUTION": {
+          "match": "exact",
+          "value": "yes"
+        },
+        "PATH": {
+          "match": "ignored",
+          "value": "Pula => Barban => Labin => Lupoglav => Buzet"
+        },
+        "PATH_LENGTH": {
+          "match": "ignored",
+          "value": "5"
+        },
+        "STATES_VISITED": {
+          "match": "ignored",
+          "value": "17"
+        },
+        "TOTAL_COST": {
+          "match": "exact",
+          "value": "100.0"
+        }
+      },
+      "name": "UCS"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+~A v B v ~D
+B v D v C v E v A
+D v ~C
+F v ~H
+~C v ~A v ~B
+A v ~B v E v ~G v ~H
+C v D v A
+C v ~G v F
+G v F
+~E v ~G
+~D v ~G v F v H
+A v B v E v G v ~H v D v ~C v ~F
+A v ~C v E v ~F v H
+~D v ~F
+H v ~C v ~B v A v ~D
+A

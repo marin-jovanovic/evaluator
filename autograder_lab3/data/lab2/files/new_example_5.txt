@@ -1,0 +1,9 @@
+~A v ~B v D v F
+B v D v E
+D v ~C v ~F
+C v ~A v ~B
+A v ~B v ~C
+E v ~D
+B v C v ~D v F v A
+C v ~B v D
+E
