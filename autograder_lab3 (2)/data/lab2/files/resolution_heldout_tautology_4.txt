@@ -1,0 +1,4 @@
+~A v A v B
+D
+~A v ~D
+A v B

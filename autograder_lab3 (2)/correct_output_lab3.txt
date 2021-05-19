@@ -1,0 +1,1346 @@
+# python solution.py volleyball.csv volleyball_test.csv
+IG(weather)=0.2467  IG(humidity)=0.1518  IG(wind)=0.0481  IG(temperature)=0.0292  
+IG(wind)=0.9710  IG(humidity)=0.0200  IG(temperature)=0.0200  
+IG(humidity)=0.9710  IG(temperature)=0.5710  IG(wind)=0.0200  
+[BRANCHES]:
+1:weather=cloudy yes
+1:weather=rainy 2:wind=strong no
+1:weather=rainy 2:wind=weak yes
+1:weather=sunny 2:humidity=high no
+1:weather=sunny 2:humidity=normal yes
+[PREDICTIONS]: yes yes yes yes no yes yes yes no yes yes no yes no no yes yes yes yes
+[ACCURACY]: 0.57895
+[CONFUSION_MATRIX]:
+4 7
+1 7
+
+# python solution.py volleyball.csv volleyball_test.csv 1
+IG(weather)=0.2467  IG(humidity)=0.1518  IG(wind)=0.0481  IG(temperature)=0.0292  
+[BRANCHES]:
+1:weather=cloudy yes
+1:weather=rainy yes
+1:weather=sunny no
+[PREDICTIONS]: yes no no yes yes no yes yes yes yes yes yes yes no no yes yes yes yes
+[ACCURACY]: 0.36842
+[CONFUSION_MATRIX]:
+2 9
+3 5
+
+# python solution.py titanic_train_categorical.csv titanic_test_categorical.csv
+IG(sex)=0.2180  IG(fare)=0.0888  IG(passenger_class)=0.0712  IG(cabin_letter)=0.0682  IG(age)=0.0204  
+IG(passenger_class)=0.1914  IG(cabin_letter)=0.1050  IG(fare)=0.0961  IG(age)=0.0533  
+IG(age)=0.1327  IG(fare)=0.0591  IG(cabin_letter)=0.0080  
+IG(fare)=0.1438  IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(fare)=0.1345  IG(cabin_letter)=0.0074  
+IG(cabin_letter)=0.3219  
+IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(fare)=0.1733  IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(fare)=0.0446  IG(cabin_letter)=0.0177  
+IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.1281  
+IG(cabin_letter)=0.0000  
+IG(fare)=0.0936  IG(cabin_letter)=0.0004  
+IG(cabin_letter)=0.0157  
+IG(cabin_letter)=0.0000  
+IG(age)=0.0457  IG(fare)=0.0142  IG(cabin_letter)=0.0138  
+IG(fare)=0.0410  IG(cabin_letter)=0.0099  
+IG(cabin_letter)=0.0364  
+IG(fare)=0.0423  IG(cabin_letter)=0.0312  
+IG(cabin_letter)=0.0442  
+IG(cabin_letter)=0.0000  
+IG(age)=0.0900  IG(cabin_letter)=0.0746  IG(fare)=0.0636  
+IG(fare)=0.1545  IG(cabin_letter)=0.0495  
+IG(cabin_letter)=1.0000  
+IG(cabin_letter)=0.1117  IG(fare)=0.1117  
+IG(fare)=0.1710  
+IG(cabin_letter)=0.0492  IG(age)=0.0384  IG(fare)=0.0369  IG(passenger_class)=0.0330  
+IG(age)=0.4371  IG(fare)=0.0920  IG(passenger_class)=0.0000  
+IG(fare)=0.2516  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(fare)=0.3113  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(fare)=0.2520  IG(age)=0.0640  IG(passenger_class)=0.0000  
+IG(age)=1.0000  IG(passenger_class)=0.0000  
+IG(age)=0.2516  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.2516  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.9183  IG(passenger_class)=0.0000  
+IG(fare)=0.1477  IG(age)=0.1075  IG(passenger_class)=0.0000  
+IG(age)=0.3219  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.0200  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.0000  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.4464  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(fare)=0.5000  IG(age)=0.3113  IG(passenger_class)=0.0000  
+IG(age)=0.0000  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.5000  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.3132  IG(fare)=0.3049  IG(passenger_class)=0.1130  
+IG(fare)=0.5944  IG(passenger_class)=0.1379  
+IG(passenger_class)=0.0000  
+IG(age)=1.0000  IG(fare)=0.5409  IG(passenger_class)=0.4591  
+IG(age)=0.0260  IG(fare)=0.0110  IG(passenger_class)=0.0044  
+IG(passenger_class)=0.0775  IG(fare)=0.0514  
+IG(fare)=0.1007  
+IG(fare)=0.0359  
+IG(fare)=0.3774  
+IG(fare)=0.3678  IG(passenger_class)=0.1427  
+IG(passenger_class)=0.0000  
+IG(passenger_class)=0.7219  
+IG(fare)=0.9183  IG(passenger_class)=0.9183  
+IG(fare)=0.0684  IG(passenger_class)=0.0489  
+IG(passenger_class)=0.0000  
+IG(fare)=0.9852  IG(passenger_class)=0.1981  
+IG(fare)=0.0396  IG(passenger_class)=0.0002  
+IG(passenger_class)=0.0026  
+IG(passenger_class)=-0.0000  
+IG(fare)=0.0765  IG(passenger_class)=0.0115  
+IG(passenger_class)=0.2043  
+IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0073  
+IG(passenger_class)=0.0528  IG(fare)=0.0405  
+IG(fare)=0.0217  
+IG(fare)=0.3113  
+[BRANCHES]:
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=50_to_75 no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=75_to_100 no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=over_100 no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=under_10 no
+1:sex=female 2:passenger_class=lower_class 3:age=child no
+1:sex=female 2:passenger_class=lower_class 3:age=infant yes
+1:sex=female 2:passenger_class=lower_class 3:age=old yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=50_to_75 yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=over_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=under_10 yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=20_to_30 no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=30_to_50 no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=50_to_75 no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=75_to_100 no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=over_100 no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=30_to_50 yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=50_to_75 no
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=over_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=20_to_30 no
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=30_to_50 no
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=50_to_75 yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=over_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=20_to_30 yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=30_to_50 yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=50_to_75 yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=over_100 yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=under_10 yes
+1:sex=female 2:passenger_class=middle_class 3:age=child yes
+1:sex=female 2:passenger_class=middle_class 3:age=infant yes
+1:sex=female 2:passenger_class=middle_class 3:age=old yes
+1:sex=female 2:passenger_class=middle_class 3:age=small_child yes
+1:sex=female 2:passenger_class=middle_class 3:age=teenager yes
+1:sex=female 2:passenger_class=middle_class 3:age=unknown yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=30_to_50 yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=50_to_75 yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=over_100 yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=under_10 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=10_to_20 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=A no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=C no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=D no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=E no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=F no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=G no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=T no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=U no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=30_to_50 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=50_to_75 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=over_100 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=under_10 yes
+1:sex=female 2:passenger_class=upper_class 3:age=child yes
+1:sex=female 2:passenger_class=upper_class 3:age=infant yes
+1:sex=female 2:passenger_class=upper_class 3:age=old yes
+1:sex=female 2:passenger_class=upper_class 3:age=small_child no
+1:sex=female 2:passenger_class=upper_class 3:age=teenager yes
+1:sex=female 2:passenger_class=upper_class 3:age=unknown yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=A yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=B yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=10_to_20 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=20_to_30 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=30_to_50 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=50_to_75 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=75_to_100 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=over_100 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=under_10 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=D yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=E yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=F yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=G yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=T yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=U yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=10_to_20 yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=20_to_30 yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=30_to_50 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=30_to_50 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=30_to_50 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=50_to_75 yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=75_to_100 yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=over_100 yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=under_10 yes
+1:sex=male 2:cabin_letter=A 3:age=child no
+1:sex=male 2:cabin_letter=A 3:age=infant no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=10_to_20 no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=20_to_30 yes
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=30_to_50 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=30_to_50 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=30_to_50 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=over_100 no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=under_10 no
+1:sex=male 2:cabin_letter=A 3:age=small_child yes
+1:sex=male 2:cabin_letter=A 3:age=teenager no
+1:sex=male 2:cabin_letter=A 3:age=unknown no
+1:sex=male 2:cabin_letter=A 3:age=young_adult yes
+1:sex=male 2:cabin_letter=B 3:fare=10_to_20 no
+1:sex=male 2:cabin_letter=B 3:fare=20_to_30 no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=adult yes
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=child no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=infant no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=old no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=small_child no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=teenager no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=unknown no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=young_adult no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=child no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=infant no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=old no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=small_child no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=teenager no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=unknown no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=young_adult no
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=adult yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=child yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=infant yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=old yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=small_child yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=teenager yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=unknown yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=young_adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=young_adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=young_adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=adult yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=child yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=infant yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=old yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=small_child yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=teenager yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=unknown yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=young_adult no
+1:sex=male 2:cabin_letter=B 3:fare=under_10 no
+1:sex=male 2:cabin_letter=C 3:fare=10_to_20 no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=adult no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=child no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=infant no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=old no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=small_child no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=teenager no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=unknown no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=young_adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=young_adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=young_adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=adult yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=child yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=infant yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=old 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=old 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=old 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=small_child yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=teenager yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=unknown 5:passenger_class=lower_class yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=unknown 5:passenger_class=middle_class yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=unknown 5:passenger_class=upper_class yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=young_adult yes
+1:sex=male 2:cabin_letter=C 3:fare=50_to_75 no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=child no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=infant no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=old no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=small_child no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=teenager no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=unknown no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=young_adult no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=adult no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=child no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=infant yes
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=old no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=small_child no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=teenager 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=teenager 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=teenager 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=unknown no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=young_adult no
+1:sex=male 2:cabin_letter=C 3:fare=under_10 no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=child no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=infant no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=old no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=small_child no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=teenager no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=unknown no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=young_adult no
+1:sex=male 2:cabin_letter=D 3:fare=20_to_30 no
+1:sex=male 2:cabin_letter=D 3:fare=30_to_50 no
+1:sex=male 2:cabin_letter=D 3:fare=50_to_75 yes
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=adult yes
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=child no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=infant no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=old no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=small_child no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=teenager no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=unknown no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=young_adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=young_adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=young_adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=D 3:fare=over_100 no
+1:sex=male 2:cabin_letter=D 3:fare=under_10 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=10_to_20 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=20_to_30 5:passenger_class=lower_class yes
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=20_to_30 5:passenger_class=middle_class yes
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=20_to_30 5:passenger_class=upper_class yes
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=30_to_50 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=over_100 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=under_10 yes
+1:sex=male 2:cabin_letter=E 3:age=child no
+1:sex=male 2:cabin_letter=E 3:age=infant no
+1:sex=male 2:cabin_letter=E 3:age=old no
+1:sex=male 2:cabin_letter=E 3:age=small_child no
+1:sex=male 2:cabin_letter=E 3:age=teenager no
+1:sex=male 2:cabin_letter=E 3:age=unknown no
+1:sex=male 2:cabin_letter=E 3:age=young_adult yes
+1:sex=male 2:cabin_letter=F 3:age=adult no
+1:sex=male 2:cabin_letter=F 3:age=child no
+1:sex=male 2:cabin_letter=F 3:age=infant yes
+1:sex=male 2:cabin_letter=F 3:age=old no
+1:sex=male 2:cabin_letter=F 3:age=small_child yes
+1:sex=male 2:cabin_letter=F 3:age=teenager no
+1:sex=male 2:cabin_letter=F 3:age=unknown no
+1:sex=male 2:cabin_letter=F 3:age=young_adult no
+1:sex=male 2:cabin_letter=G no
+1:sex=male 2:cabin_letter=T no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=10_to_20 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=50_to_75 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=10_to_20 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=10_to_20 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=20_to_30 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=30_to_50 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=75_to_100 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=over_100 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=under_10 yes
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=10_to_20 yes
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=20_to_30 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=20_to_30 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=20_to_30 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=30_to_50 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=30_to_50 5:passenger_class=middle_class yes
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=30_to_50 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=10_to_20 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=20_to_30 yes
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=10_to_20 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=10_to_20 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=10_to_20 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=10_to_20 yes
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=30_to_50 yes
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=10_to_20 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=10_to_20 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=10_to_20 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=under_10 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=under_10 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=under_10 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=10_to_20 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=10_to_20 5:passenger_class=middle_class yes
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=10_to_20 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=20_to_30 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=20_to_30 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=20_to_30 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=50_to_75 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=50_to_75 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=50_to_75 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=under_10 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=under_10 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=under_10 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=10_to_20 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=10_to_20 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=under_10 no
+[PREDICTIONS]: no no no no no no no no no no no yes yes no no no yes yes no yes no no no no no no yes no no no yes no yes yes yes no no no no yes no no no no no yes no no yes no no no yes no no no no no no yes yes no no yes yes yes yes no yes no no no no no no yes yes yes no yes no yes no no yes yes no no no yes yes no yes no no no no yes no no no
+[ACCURACY]: 0.78218
+[CONFUSION_MATRIX]:
+56 9
+13 23
+
+# python solution.py titanic_train_categorical.csv titanic_test_categorical.csv 2
+IG(sex)=0.2180  IG(fare)=0.0888  IG(passenger_class)=0.0712  IG(cabin_letter)=0.0682  IG(age)=0.0204  
+IG(passenger_class)=0.1914  IG(cabin_letter)=0.1050  IG(fare)=0.0961  IG(age)=0.0533  
+IG(cabin_letter)=0.0492  IG(age)=0.0384  IG(fare)=0.0369  IG(passenger_class)=0.0330  
+[BRANCHES]:
+1:sex=female 2:passenger_class=lower_class yes
+1:sex=female 2:passenger_class=middle_class yes
+1:sex=female 2:passenger_class=upper_class yes
+1:sex=male 2:cabin_letter=A no
+1:sex=male 2:cabin_letter=B no
+1:sex=male 2:cabin_letter=C no
+1:sex=male 2:cabin_letter=D no
+1:sex=male 2:cabin_letter=E no
+1:sex=male 2:cabin_letter=F no
+1:sex=male 2:cabin_letter=G no
+1:sex=male 2:cabin_letter=T no
+1:sex=male 2:cabin_letter=U no
+[PREDICTIONS]: no no yes no no no yes yes no yes no yes no no no no no yes no yes no no no yes no no yes no no no yes no no yes no no no no no yes yes no no no no yes no no no no no no yes no no no no no no yes no no yes yes yes yes yes no yes no no no yes yes no yes yes no no no no yes no no yes yes no no no yes yes no yes no no yes no yes yes no no
+[ACCURACY]: 0.77228
+[CONFUSION_MATRIX]:
+54 11
+12 24
+
+# python solution.py logic_small.csv logic_small_test.csv
+IG(A)=0.3219  IG(C)=0.2365  IG(D)=0.2365  IG(B)=0.0000  
+IG(C)=1.0000  IG(D)=1.0000  IG(B)=0.0000  
+[BRANCHES]:
+1:A=False False
+1:A=True 2:C=False False
+1:A=True 2:C=True True
+[PREDICTIONS]: False False True False False True
+[ACCURACY]: 0.50000
+[CONFUSION_MATRIX]:
+3 2
+1 0
+
+# python solution.py logic_small.csv logic_small_test.csv 1
+IG(A)=0.3219  IG(C)=0.2365  IG(D)=0.2365  IG(B)=0.0000  
+[BRANCHES]:
+1:A=False False
+1:A=True False
+[PREDICTIONS]: False False False False False False
+[ACCURACY]: 0.83333
+[CONFUSION_MATRIX]:
+5 0
+1 0
+
+# python solution.py heldout_logic_f2_train.csv heldout_logic_f2_test.csv
+IG(A)=0.2044  IG(D)=0.1589  IG(B)=0.0488  IG(C)=0.0032  
+IG(B)=0.0817  IG(D)=0.0817  IG(C)=0.0000  
+IG(C)=0.2516  IG(D)=0.2516  
+IG(D)=1.0000  
+IG(D)=0.9183  IG(C)=0.2516  
+[BRANCHES]:
+1:A=False 2:B=False 3:C=False 4:D=False True
+1:A=False 2:B=False 3:C=False 4:D=True False
+1:A=False 2:B=False 3:C=True False
+1:A=False 2:B=True 3:D=False False
+1:A=False 2:B=True 3:D=True True
+1:A=True True
+[PREDICTIONS]: True True True True False True False True
+[ACCURACY]: 0.75000
+[CONFUSION_MATRIX]:
+1 1
+1 5
+
+# # python solution.py heldout_logic_f2_train.csv heldout_logic_f2_test.csv 3
+IG(A)=0.2044  IG(D)=0.1589  IG(B)=0.0488  IG(C)=0.0032  
+IG(B)=0.0817  IG(D)=0.0817  IG(C)=0.0000  
+IG(C)=0.2516  IG(D)=0.2516  
+IG(D)=0.9183  IG(C)=0.2516  
+[BRANCHES]:
+1:A=False 2:B=False 3:C=False False
+1:A=False 2:B=False 3:C=True False
+1:A=False 2:B=True 3:D=False False
+1:A=False 2:B=True 3:D=True True
+1:A=True True
+[PREDICTIONS]: True True True True False True False True
+[ACCURACY]: 0.75000
+[CONFUSION_MATRIX]:
+1 1
+1 5
+
+# python solution.py heldout_logic_f3_train.csv heldout_logic_f3_test.csv
+IG(B)=0.3219  IG(A)=0.1710  IG(C)=0.1710  
+IG(A)=1.0000  IG(C)=0.0000  
+[BRANCHES]:
+1:B=False True
+1:B=True 2:A=False False
+1:B=True 2:A=True True
+[PREDICTIONS]: True True False
+[ACCURACY]: 1.00000
+[CONFUSION_MATRIX]:
+1 0
+0 2
+
+# python solution.py heldout_logic_f3_train.csv heldout_logic_f3_test.csv 1
+IG(B)=0.3219  IG(A)=0.1710  IG(C)=0.1710  
+[BRANCHES]:
+1:B=False True
+1:B=True False
+[PREDICTIONS]: False True False
+[ACCURACY]: 0.66667
+[CONFUSION_MATRIX]:
+1 0
+1 1
+
+# python solution.py heldout_logic_f4_train.csv heldout_logic_f4_test.csv
+IG(E)=0.3569  IG(B)=0.1582  IG(C)=0.1474  IG(A)=0.0198  IG(D)=0.0112  
+IG(C)=0.5900  IG(B)=0.3198  IG(D)=0.0911  IG(A)=0.0183  
+IG(D)=0.3219  IG(B)=0.1710  IG(A)=0.0729  
+IG(B)=1.0000  IG(A)=0.0000  
+[BRANCHES]:
+1:E=False True
+1:E=True 2:C=False False
+1:E=True 2:C=True 3:D=False True
+1:E=True 2:C=True 3:D=True 4:B=False False
+1:E=True 2:C=True 3:D=True 4:B=True True
+[PREDICTIONS]: True True True True False False False True True True True True False False
+[ACCURACY]: 0.78571
+[CONFUSION_MATRIX]:
+3 1
+2 8
+
+# python solution.py heldout_logic_f4_train.csv heldout_logic_f4_test.csv 2
+IG(E)=0.3569  IG(B)=0.1582  IG(C)=0.1474  IG(A)=0.0198  IG(D)=0.0112  
+IG(C)=0.5900  IG(B)=0.3198  IG(D)=0.0911  IG(A)=0.0183  
+[BRANCHES]:
+1:E=False True
+1:E=True 2:C=False False
+1:E=True 2:C=True True
+[PREDICTIONS]: True True True True False False False True True True True True False True
+[ACCURACY]: 0.71429
+[CONFUSION_MATRIX]:
+2 2
+2 8
+
+# python solution.py heldout_singlefeat_train.csv heldout_singlefeat_test.csv
+IG(one)=0.9183  
+[BRANCHES]:
+1:one=a yes
+1:one=b no
+1:one=c yes
+[PREDICTIONS]: yes no yes
+[ACCURACY]: 1.00000
+[CONFUSION_MATRIX]:
+1 0
+0 2
+
+# python solution.py heldout_small_train.csv heldout_small_test.csv
+IG(one)=1.5850  IG(three)=1.5850  IG(two)=1.5850  
+[BRANCHES]:
+1:one=a yes
+1:one=b no
+1:one=c maybe
+[PREDICTIONS]: yes no maybe
+[ACCURACY]: 1.00000
+[CONFUSION_MATRIX]:
+1 0 0
+0 1 0
+0 0 1
+
+# python solution.py heldout_unseen_featurevalue_train.csv heldout_unseen_featurevalue_test.csv
+IG(one)=1.5850  IG(three)=1.5850  IG(two)=1.5850  
+[BRANCHES]:
+1:one=a yes
+1:one=b no
+1:one=c maybe
+[PREDICTIONS]: maybe maybe maybe
+[ACCURACY]: 0.33333
+[CONFUSION_MATRIX]:
+1 0 0
+1 0 0
+1 0 0
+
+# python solution.py titanic_train_categorical.csv titanic_heldout_categorical.csv
+IG(sex)=0.2180  IG(fare)=0.0888  IG(passenger_class)=0.0712  IG(cabin_letter)=0.0682  IG(age)=0.0204  
+IG(passenger_class)=0.1914  IG(cabin_letter)=0.1050  IG(fare)=0.0961  IG(age)=0.0533  
+IG(age)=0.1327  IG(fare)=0.0591  IG(cabin_letter)=0.0080  
+IG(fare)=0.1438  IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(fare)=0.1345  IG(cabin_letter)=0.0074  
+IG(cabin_letter)=0.3219  
+IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(fare)=0.1733  IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.0000  
+IG(fare)=0.0446  IG(cabin_letter)=0.0177  
+IG(cabin_letter)=0.0000  
+IG(cabin_letter)=0.1281  
+IG(cabin_letter)=0.0000  
+IG(fare)=0.0936  IG(cabin_letter)=0.0004  
+IG(cabin_letter)=0.0157  
+IG(cabin_letter)=0.0000  
+IG(age)=0.0457  IG(fare)=0.0142  IG(cabin_letter)=0.0138  
+IG(fare)=0.0410  IG(cabin_letter)=0.0099  
+IG(cabin_letter)=0.0364  
+IG(fare)=0.0423  IG(cabin_letter)=0.0312  
+IG(cabin_letter)=0.0442  
+IG(cabin_letter)=0.0000  
+IG(age)=0.0900  IG(cabin_letter)=0.0746  IG(fare)=0.0636  
+IG(fare)=0.1545  IG(cabin_letter)=0.0495  
+IG(cabin_letter)=1.0000  
+IG(cabin_letter)=0.1117  IG(fare)=0.1117  
+IG(fare)=0.1710  
+IG(cabin_letter)=0.0492  IG(age)=0.0384  IG(fare)=0.0369  IG(passenger_class)=0.0330  
+IG(age)=0.4371  IG(fare)=0.0920  IG(passenger_class)=0.0000  
+IG(fare)=0.2516  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(fare)=0.3113  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(fare)=0.2520  IG(age)=0.0640  IG(passenger_class)=0.0000  
+IG(age)=1.0000  IG(passenger_class)=0.0000  
+IG(age)=0.2516  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.2516  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.9183  IG(passenger_class)=0.0000  
+IG(fare)=0.1477  IG(age)=0.1075  IG(passenger_class)=0.0000  
+IG(age)=0.3219  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.0200  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.0000  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.4464  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(fare)=0.5000  IG(age)=0.3113  IG(passenger_class)=0.0000  
+IG(age)=0.0000  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.5000  IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(age)=0.3132  IG(fare)=0.3049  IG(passenger_class)=0.1130  
+IG(fare)=0.5944  IG(passenger_class)=0.1379  
+IG(passenger_class)=0.0000  
+IG(age)=1.0000  IG(fare)=0.5409  IG(passenger_class)=0.4591  
+IG(age)=0.0260  IG(fare)=0.0110  IG(passenger_class)=0.0044  
+IG(passenger_class)=0.0775  IG(fare)=0.0514  
+IG(fare)=0.1007  
+IG(fare)=0.0359  
+IG(fare)=0.3774  
+IG(fare)=0.3678  IG(passenger_class)=0.1427  
+IG(passenger_class)=0.0000  
+IG(passenger_class)=0.7219  
+IG(fare)=0.9183  IG(passenger_class)=0.9183  
+IG(fare)=0.0684  IG(passenger_class)=0.0489  
+IG(passenger_class)=0.0000  
+IG(fare)=0.9852  IG(passenger_class)=0.1981  
+IG(fare)=0.0396  IG(passenger_class)=0.0002  
+IG(passenger_class)=0.0026  
+IG(passenger_class)=-0.0000  
+IG(fare)=0.0765  IG(passenger_class)=0.0115  
+IG(passenger_class)=0.2043  
+IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0000  
+IG(passenger_class)=0.0073  
+IG(passenger_class)=0.0528  IG(fare)=0.0405  
+IG(fare)=0.0217  
+IG(fare)=0.3113  
+[BRANCHES]:
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=30_to_50 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=50_to_75 no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=75_to_100 no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=over_100 no
+1:sex=female 2:passenger_class=lower_class 3:age=adult 4:fare=under_10 no
+1:sex=female 2:passenger_class=lower_class 3:age=child no
+1:sex=female 2:passenger_class=lower_class 3:age=infant yes
+1:sex=female 2:passenger_class=lower_class 3:age=old yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=10_to_20 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=20_to_30 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=30_to_50 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=50_to_75 yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=over_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=small_child 4:fare=under_10 yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=A no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=B no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=C no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=D no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=E no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=F no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=T no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=10_to_20 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=20_to_30 no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=30_to_50 no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=50_to_75 no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=75_to_100 no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=over_100 no
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=teenager 4:fare=under_10 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=10_to_20 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=20_to_30 5:cabin_letter=U no
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=30_to_50 yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=50_to_75 no
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=over_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=unknown 4:fare=under_10 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=G no
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=20_to_30 no
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=30_to_50 no
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=50_to_75 yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=over_100 yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=lower_class 3:age=young_adult 4:fare=under_10 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=10_to_20 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=20_to_30 yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=30_to_50 yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=50_to_75 yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=over_100 yes
+1:sex=female 2:passenger_class=middle_class 3:age=adult 4:fare=under_10 yes
+1:sex=female 2:passenger_class=middle_class 3:age=child yes
+1:sex=female 2:passenger_class=middle_class 3:age=infant yes
+1:sex=female 2:passenger_class=middle_class 3:age=old yes
+1:sex=female 2:passenger_class=middle_class 3:age=small_child yes
+1:sex=female 2:passenger_class=middle_class 3:age=teenager yes
+1:sex=female 2:passenger_class=middle_class 3:age=unknown yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=10_to_20 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=A yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=C yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=D yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=E yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=F yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=G yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=T yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=20_to_30 5:cabin_letter=U yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=30_to_50 yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=50_to_75 yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=over_100 yes
+1:sex=female 2:passenger_class=middle_class 3:age=young_adult 4:fare=under_10 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=10_to_20 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=A no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=B yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=C no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=D no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=E no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=F no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=G no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=T no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=20_to_30 5:cabin_letter=U no
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=30_to_50 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=50_to_75 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=75_to_100 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=over_100 yes
+1:sex=female 2:passenger_class=upper_class 3:age=adult 4:fare=under_10 yes
+1:sex=female 2:passenger_class=upper_class 3:age=child yes
+1:sex=female 2:passenger_class=upper_class 3:age=infant yes
+1:sex=female 2:passenger_class=upper_class 3:age=old yes
+1:sex=female 2:passenger_class=upper_class 3:age=small_child no
+1:sex=female 2:passenger_class=upper_class 3:age=teenager yes
+1:sex=female 2:passenger_class=upper_class 3:age=unknown yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=A yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=B yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=10_to_20 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=20_to_30 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=30_to_50 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=50_to_75 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=75_to_100 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=over_100 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=C 5:fare=under_10 yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=D yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=E yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=F yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=G yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=T yes
+1:sex=female 2:passenger_class=upper_class 3:age=young_adult 4:cabin_letter=U yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=10_to_20 yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=20_to_30 yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=30_to_50 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=30_to_50 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=30_to_50 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=50_to_75 yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=75_to_100 yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=over_100 yes
+1:sex=male 2:cabin_letter=A 3:age=adult 4:fare=under_10 yes
+1:sex=male 2:cabin_letter=A 3:age=child no
+1:sex=male 2:cabin_letter=A 3:age=infant no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=10_to_20 no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=20_to_30 yes
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=30_to_50 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=30_to_50 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=30_to_50 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=over_100 no
+1:sex=male 2:cabin_letter=A 3:age=old 4:fare=under_10 no
+1:sex=male 2:cabin_letter=A 3:age=small_child yes
+1:sex=male 2:cabin_letter=A 3:age=teenager no
+1:sex=male 2:cabin_letter=A 3:age=unknown no
+1:sex=male 2:cabin_letter=A 3:age=young_adult yes
+1:sex=male 2:cabin_letter=B 3:fare=10_to_20 no
+1:sex=male 2:cabin_letter=B 3:fare=20_to_30 no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=adult yes
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=child no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=infant no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=old no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=small_child no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=teenager no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=unknown no
+1:sex=male 2:cabin_letter=B 3:fare=30_to_50 4:age=young_adult no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=child no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=infant no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=old no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=small_child no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=teenager no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=unknown no
+1:sex=male 2:cabin_letter=B 3:fare=50_to_75 4:age=young_adult no
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=adult yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=child yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=infant yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=old yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=small_child yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=teenager yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=unknown yes
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=young_adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=young_adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=B 3:fare=75_to_100 4:age=young_adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=adult yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=child yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=infant yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=old yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=small_child yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=teenager yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=unknown yes
+1:sex=male 2:cabin_letter=B 3:fare=over_100 4:age=young_adult no
+1:sex=male 2:cabin_letter=B 3:fare=under_10 no
+1:sex=male 2:cabin_letter=C 3:fare=10_to_20 no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=adult no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=child no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=infant no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=old no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=small_child no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=teenager no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=unknown no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=young_adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=young_adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=C 3:fare=20_to_30 4:age=young_adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=adult yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=child yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=infant yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=old 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=old 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=old 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=small_child yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=teenager yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=unknown 5:passenger_class=lower_class yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=unknown 5:passenger_class=middle_class yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=unknown 5:passenger_class=upper_class yes
+1:sex=male 2:cabin_letter=C 3:fare=30_to_50 4:age=young_adult yes
+1:sex=male 2:cabin_letter=C 3:fare=50_to_75 no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=child no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=infant no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=old no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=small_child no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=teenager no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=unknown no
+1:sex=male 2:cabin_letter=C 3:fare=75_to_100 4:age=young_adult no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=adult no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=child no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=infant yes
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=old no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=small_child no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=teenager 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=teenager 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=teenager 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=unknown no
+1:sex=male 2:cabin_letter=C 3:fare=over_100 4:age=young_adult no
+1:sex=male 2:cabin_letter=C 3:fare=under_10 no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=child no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=infant no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=old no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=small_child no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=teenager no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=unknown no
+1:sex=male 2:cabin_letter=D 3:fare=10_to_20 4:age=young_adult no
+1:sex=male 2:cabin_letter=D 3:fare=20_to_30 no
+1:sex=male 2:cabin_letter=D 3:fare=30_to_50 no
+1:sex=male 2:cabin_letter=D 3:fare=50_to_75 yes
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=adult yes
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=child no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=infant no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=old no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=small_child no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=teenager no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=unknown no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=young_adult 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=young_adult 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=D 3:fare=75_to_100 4:age=young_adult 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=D 3:fare=over_100 no
+1:sex=male 2:cabin_letter=D 3:fare=under_10 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=10_to_20 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=20_to_30 5:passenger_class=lower_class yes
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=20_to_30 5:passenger_class=middle_class yes
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=20_to_30 5:passenger_class=upper_class yes
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=30_to_50 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=over_100 no
+1:sex=male 2:cabin_letter=E 3:age=adult 4:fare=under_10 yes
+1:sex=male 2:cabin_letter=E 3:age=child no
+1:sex=male 2:cabin_letter=E 3:age=infant no
+1:sex=male 2:cabin_letter=E 3:age=old no
+1:sex=male 2:cabin_letter=E 3:age=small_child no
+1:sex=male 2:cabin_letter=E 3:age=teenager no
+1:sex=male 2:cabin_letter=E 3:age=unknown no
+1:sex=male 2:cabin_letter=E 3:age=young_adult yes
+1:sex=male 2:cabin_letter=F 3:age=adult no
+1:sex=male 2:cabin_letter=F 3:age=child no
+1:sex=male 2:cabin_letter=F 3:age=infant yes
+1:sex=male 2:cabin_letter=F 3:age=old no
+1:sex=male 2:cabin_letter=F 3:age=small_child yes
+1:sex=male 2:cabin_letter=F 3:age=teenager no
+1:sex=male 2:cabin_letter=F 3:age=unknown no
+1:sex=male 2:cabin_letter=F 3:age=young_adult no
+1:sex=male 2:cabin_letter=G no
+1:sex=male 2:cabin_letter=T no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=10_to_20 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=50_to_75 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=lower_class 5:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=10_to_20 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=middle_class 5:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=10_to_20 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=20_to_30 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=30_to_50 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=75_to_100 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=over_100 yes
+1:sex=male 2:cabin_letter=U 3:age=adult 4:passenger_class=upper_class 5:fare=under_10 yes
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=10_to_20 yes
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=20_to_30 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=20_to_30 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=20_to_30 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=30_to_50 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=30_to_50 5:passenger_class=middle_class yes
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=30_to_50 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=child 4:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=10_to_20 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=20_to_30 yes
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=infant 4:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=10_to_20 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=10_to_20 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=10_to_20 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=old 4:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=10_to_20 yes
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=30_to_50 yes
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=small_child 4:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=10_to_20 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=10_to_20 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=10_to_20 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=under_10 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=under_10 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=teenager 4:fare=under_10 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=10_to_20 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=10_to_20 5:passenger_class=middle_class yes
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=10_to_20 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=20_to_30 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=20_to_30 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=20_to_30 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=50_to_75 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=50_to_75 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=50_to_75 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=under_10 5:passenger_class=lower_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=under_10 5:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=unknown 4:fare=under_10 5:passenger_class=upper_class no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=10_to_20 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=lower_class 5:fare=under_10 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=middle_class no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=10_to_20 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=20_to_30 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=30_to_50 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=50_to_75 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=75_to_100 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=over_100 no
+1:sex=male 2:cabin_letter=U 3:age=young_adult 4:passenger_class=upper_class 5:fare=under_10 no
+[PREDICTIONS]: yes yes no no no no yes yes yes no yes no no no no no yes yes no no yes no no no yes no yes yes no yes yes yes no no no no no yes no no no no yes no no no no yes yes no yes no no no yes no no no no yes no no no yes no yes no no no no no no yes no yes no no yes no yes yes yes no no no no yes no yes yes
+[ACCURACY]: 0.86667
+[CONFUSION_MATRIX]:
+50 5
+7 28

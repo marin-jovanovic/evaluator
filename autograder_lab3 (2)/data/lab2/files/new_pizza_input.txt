@@ -1,0 +1,20 @@
+yeast ?
+dough ?
+yeast +
+pizza_margherita ?
+water -
+pizza_margherita ?
+water +
+dough ?
+~flour v ~yeast v ~water v ~salt v dough -
+dough ?
+pizza_prosciutto ?
+~flour v ~yeast v ~water v ~salt v dough +
+pizza_prosciutto ?
+tomato_paste -
+pizza_prosciutto ?
+tomato_paste +
+water +
+pizza_prosciutto ?
+~water v ~tomato_paste v tomato_sauce -
+pizza_margherita ?
