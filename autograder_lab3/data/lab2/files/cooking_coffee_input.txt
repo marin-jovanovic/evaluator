@@ -1,8 +1,0 @@
-Water ?
-Hot_water ?
-Coffee ?
-Heater -
-Hot_water ?
-Coffee ?
-Heater +
-Coffee ?

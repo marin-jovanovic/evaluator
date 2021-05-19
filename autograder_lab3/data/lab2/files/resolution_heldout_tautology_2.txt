@@ -1,6 +1,0 @@
-~A V B
-A V ~B V C
-~A V ~D V C
-D
-A
-C

@@ -1,5 +1,0 @@
-A v B v C
-~A v ~C
-A v ~B
-B v C
-C
