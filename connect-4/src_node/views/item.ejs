@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+
+    <class id="category-template">
+        <section class="section secondary-color-bg">
+            <div class="centered-container">
+                <h1 class="decorated-title font-secondary main-color">
+                    <span class="main-color-emphasized">Item</span>
+                    Information</h1>
+                <div class="separator"></div>
+
+            </div>
+        </section>
+    </class>
+
+
+
+    <div class="centered-container container">
+        <div class="item-view">
+            <img class="item-view-image" src=" <%- inventory_elem.imageurl %> "></img>
+            <div class="item-view-text">
+                <div class="item-view-text-title font-secondary main-color-emphasized"> 
+                    <% inventory_elem.name %> 
+                </div>
+                <hr>
+
+                <!-- hardcoded because it is unordered in instructions for lab-->
+
+                <div class="item-view-text-property main-color"> 
+                    Price:    
+                <span class="item-view-text-value"> <%= inventory_elem.price %>  </span></div>
+
+                <div class="item-view-text-property main-color"> 
+                    Available colors:    
+                <span class="item-view-text-value"> <%= inventory_elem.colors %>  </span></div>
+
+                <div class="item-view-text-property main-color"> 
+                    Category:    
+                <span class="item-view-text-value"> <%= inventory_elem.cname %>  </span></div>
+
+                <div class="item-view-text-property main-color"> 
+                    Seasonal:   
+                <span class="item-view-text-value"> <%= inventory_elem.cid %>  </span></div>
+
+                <div class="item-view-text-desc font-secondary main-color"> 
+                    <%= inventory_elem.description %>
+                </div>
+
+
+            </div>
+        </div> 
+    
+    </div>
+
+
+
+    <!-- INSERT CODE HERE -->
+
+    <!-- <div class="item-view">
+        <img class="item-view-image" src=" ... "></img>
+        <div class="item-view-text">
+            <div class="item-view-text-title font-secondary main-color-emphasized"> ... </div>
+            <hr>
+            <div class="item-view-text-property main-color"> ... <span class="item-view-text-value"> ... </span></div>
+            <div class="item-view-text-desc font-secondary main-color"> ... </div>
+        </div>
+    </div> -->
+
+</main>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>

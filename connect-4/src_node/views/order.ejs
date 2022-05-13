@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./images/flower-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+
+    <% for (category of categories) { %>
+
+        <class id="category-template">
+            <section class="section secondary-color-bg">
+                <div class="centered-container">
+                    <h1 class="decorated-title font-secondary main-color">
+                        <span class="main-color-emphasized"><%= category.name %></span>
+                        Inventory</h1>
+                    <div class="separator"></div>
+                </div>
+            </section>
+        </class>
+    
+        <div class="gallery">
+            <% inventories[category.id].forEach(element => { %>
+                <div class="photo-box" data-id="<%= element.id %>">
+                    <img class="photo-box-image" src="<%= element.imageUrl %>"></img>
+                    <div class="photo-box-title font-secondary main-color-emphasized">
+                        <a class="link" href="item/<%= element.id %>" > <%= element.name %> </a>
+                    </div>
+                </div>    
+            <% }); %>
+        </div>
+
+        <% if ( inventories[category.id].length == 0) { %>
+            <div>
+                <h1 class="decorated-title font-secondary main-color centered-container">
+                    No items in this category
+                </h1>
+            </div>
+        <% }; %>
+
+    <% } %>
+
+
+    <!-- INSERT CODE HERE -->
+    
+    <!-- <div class="gallery">
+            <div class="photo-box" data-id=" ... ">
+                <img class="photo-box-image" src=" ... "></img>
+                <div class="photo-box-title font-secondary main-color-emphasized">
+                    <a class="link" href=" ... "> ... </a>
+                </div>
+            </div>
+    </div> -->
+
+</main>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>
